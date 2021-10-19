@@ -1,4 +1,26 @@
+<!DOCTYPE html>
 <html>
+
+<style>
+
+#rcorners {
+	border-collapse: separate;
+	border: solid white 1px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+td, th {
+	border-left: solid black 2px;
+	border-top: solid black 2px;
+}
+
+td:first-child, th:first-child {
+	border-left: none;
+}
+
+</style>
+
 <head>
  	<header id="sitehdr" align="center">
         <a href="gpNavigation.html"><img src="images/CompanyLogoOutlined.png" height="75" width="75" align="center"></a>
@@ -30,11 +52,12 @@
             </th>
         </table>
     </header>
+</style>
 </head>
 
-<body bgcolor="#4a7c59" text="#faf3dd">
-	
-<table border="1px" bordercolor="#faf3dd" width="100%">
+<body bgcolor="#000000" text="#ffffff">
+<ul>	
+<table id="rcorners" border="2px" bordercolor="#4af1f2" width="100%">
 	<tr>
 		<th><h4>Orders</h4></th>
 		<td>
@@ -171,6 +194,6 @@
 		</td>
 	</tr>	
 </table>
-
+</ul>
 </body>
 </html>
