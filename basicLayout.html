@@ -10,10 +10,10 @@
 		}
 
 		body {
-			background-image: url('images/stars.gif');
-			background-size: cover;
+			background-color: black;
 			width: 100%;
 			height: 100vh;
+			font: sans-serif;
 		}
 
 		.wrapper {
@@ -51,10 +51,6 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			font-size: 18px;
-		}
-
-		p {
-			color: #ffffff;
 		}
 	
 		.p1 {
@@ -111,6 +107,26 @@
 		button:hover {
 			background-color: rgba(0, 136, 169, 0.8)
 		}
+
+		.bannerDiv {
+			padding: 100px;
+			background: url('images/circuitImage.jpg');
+		}
+
+		.adDiv {
+			padding: 100px;
+			background-color: black;
+		}
+
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		td {
+			text-align: center;
+		}
 	</style>
 
 	<head>
@@ -121,7 +137,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
-	<body>
+	<body text="#ffffff">
 		<header>
 			<p class="p1"><a href="#home"><b>The Four Tops</b></a></p>
 			<img class="logo" src="images/CompanyLogoOutlined.png" alt="logo" width="50" height="50">
@@ -137,5 +153,36 @@
 		
 			<a class="cta" href="#"><button>Login/Signup</button></a>
 		</header>
+
+		<div class="bannerDiv">
+			<h1 style="color:beige;" align="center">See our offered service</h1>
+			<div class="center"><a class="cta" href="#"><button>View Services</button></a></div>
+		</div>
+		
+		<div class="adDiv">
+			<a href="#"><img src="images/computerImage.png" alt="Computer Image" width="175" height="175" style="position: absolute; left: 185px; top: 400px;"></a>
+			<a href="#"><img src="images/peopleImage.png" alt="People Communicating Image" width="175" height="175" style="position: absolute; left: 510px; top: 400px;"></a>
+			<a href="#"><img src="images/consoleImage.png" alt="Gaming Console Image" width="200" height="160" style="position: absolute; left: 835px; top: 420px;"></a>
+				
+			<br><br><br><br><br>
+
+			<table border="0" width="100%" style="table-layout: fixed;  text-align: center;">
+				<tr>
+					<td><b>6</b></td>
+					<td><b>420</b></td>
+					<td><b>9</b></td>
+				</tr>
+			</table>
+		
+			<br>
+
+			<table border="0" width="100%" style="table-layout: fixed; border-spacing: 10px;">
+				<tr>
+					<td>Computers are an everyday necessity, especially in this day and age. They tend to break down without any prior issues. We are here to fix that. We will have a specialist reach out to you and determine the issue and have it fixed. No more pesky blue screens of death, let us have a crack at it first!</td>
+					<td>Gaming has become a staple in esports. As The Four Tops, not only do we have fun sharing tactics, we also enjoy teaching those who want to get better in games. Can't get a 30 bomb in Call of Duty? We can help with that! We have a specialist specifically for gaming. Lets all have fun together!</td>
+					<td>We specialize in fixing issues with consoles. 9 generations of consoles, we can fix 'em all! Best believe when the 10th generation in consoles that are set to releases in 2022, we will be on-top of knowing the ins and outs of any new consoles to offer the best repair service and customer satisfaction!</td>
+				</tr>
+			</table>
+		</div>
 	</body>
 </html>
