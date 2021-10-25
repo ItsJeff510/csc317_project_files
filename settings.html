@@ -3,20 +3,20 @@
 
 <style>
 
-#rcorners {
-	border-collapse: separate;
-	border: solid white 1px;
-	border-radius: 6px;
-	-moz-border-radius: 6px;
+th:first-of-type {
+	border-top-left-radius: 10px;
 }
 
-td, th {
-	border-left: solid black 2px;
-	border-top: solid black 2px;
+th:last-of-type {
+	border-top-right-radius: 10px;
 }
 
-td:first-child, th:first-child {
-	border-left: none;
+tr:last-of-type td:first-of-type {
+	border-bottom-left-radius: 10px;
+}
+
+tr:last-of-type td:last-of-type {
+	border-bottom-right-radius: 10px;
 }
 
 </style>
