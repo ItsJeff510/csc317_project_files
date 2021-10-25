@@ -1,5 +1,185 @@
 <!DOCTYPE html>
 
 <html>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			outline: none;
+		}
 
+		body {
+			background-color: black;
+			width: 100%;
+			height: 100vh;
+			font: sans-serif;
+		}
+
+		.wrapper {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: rgba(0, 0, 0, 0.6);
+			max-width: 550px;
+			width: 100%;
+			padding: 15px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.wrapper .input {
+			width: 85%;
+			padding 15px 20px;
+			border: none;
+			border-radius: 5px;
+			font-weight: bold;
+		}
+
+		.searchbtn {
+			background: #ffffff;
+			width: 10%
+			border-radius: 5px;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.searchbtn .fas {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 18px;
+		}
+	
+		.p1 {
+			font-family: "Lucida Handwriting, Brush Script MT, cursive";
+		}
+
+		li, a, button {
+			font-family: sans-serif
+			font-weight: 500;
+			font-size: 16px;
+			color: #ecf0f1;
+			text-decoration: none;
+		}
+
+		header {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 30px 10%;
+		}
+
+		.logo {
+			cursor: pointer;
+			margin-right: auto;
+		}
+
+		.nav_links {
+			list-style: none;
+		}
+
+		.nav_links li {
+			display: inline-block;
+			padding: 0px 20px;
+		}
+	
+		.nav_links li a {
+			transition: all 0.3s ease 0s;
+		}
+
+		.nav_links li a:hover {
+			color: #0088a9;
+		}
+
+		button {
+			margin-left: 20px;
+			padding: 9px 25px;
+			background-color: rgba(0, 136, 169, 1);
+			border: none;
+			border-radius: 50px;
+			cursor: pointer;
+			transition: all 0.3s ease 0s;
+		}
+
+		button:hover {
+			background-color: rgba(0, 136, 169, 0.8)
+		}
+
+		.bannerDiv {
+			padding: 20px;
+			background-color: #1c5d8e;
+		}
+
+		.serviceDiv {
+			padding: 250px;
+		}
+
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		td {
+			text-align: center;
+		}
+
+		.horizontal-line {
+			border-top: 4px solid #fff;
+			display: block;
+			height: 100px;
+			margin: 0 auto;
+			width: 100px;
+		}
+	</style>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Home Page</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body text="#ffffff">
+		<header>
+			<p class="p1"><a href="index.html"><b>The Four Tops</b></a></p>
+			<img class="logo" src="images/CompanyLogoOutlined.png" alt="logo" width="50" height="50">
+			
+			<nav>
+				<ul class="nav_links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+				</ul>
+			</nav>
+		
+			<a class="cta" href="#"><button>Login/Signup</button></a>
+		</header>
+	
+		<div class="bannerDiv">
+			<h1 style="text-align: center;">Services</h1><br>
+			<span class="horizontal-line"></span><br>
+		</div>
+
+		<h5 style="position: absolute; top: 300px; left: 490px;">Click on a service to learn more</h5>
+
+		<div class="serviceDiv">
+			<a href="#computerRepairService.html"><img src="images/gameService.gif" width="250" height="250" style="position: absolute; left: 75px; top: 350px;"></a> 
+			<a href="#gamingService.html"><img src="images/gameService.gif" width="250" height="250" style="position: absolute; left: 475px; top: 350px;"></a>
+			<a href="#consoleRepairService.html"><img src="images/gameService.gif" width="250" height="250" style="position: absolute; left: 875px; top: 350px;"></a>
+		</div>
+		
+		<table border="0" width="100%" style="position: absolute; top: 620px;">
+			<tr>
+				<td width="395"><a href="#computerRepairService.html"><b>Computer Repair Service</b></a></td>
+				<td width="400"><a href="#gamingService.html"<b>Gaming Improvement Service</b></a></td>
+				<td width="400"><a href="#consoleRepairService.html"><b>Console Repair Service</b></a></td>
+			</tr>
+		</table>
+	</body>
 </html>
