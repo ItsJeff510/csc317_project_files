@@ -1,0 +1,230 @@
+<!DOCTYPE>
+
+<html>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			outline: none;
+		}
+
+		body {
+			background-color: black;
+			width: 100%;
+			height: 100vh;
+			font: sans-serif;
+		}
+
+		.wrapper {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: rgba(0, 0, 0, 0.6);
+			max-width: 550px;
+			width: 100%;
+			padding: 15px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.wrapper .input {
+			width: 85%;
+			padding 15px 20px;
+			border: none;
+			border-radius: 5px;
+			font-weight: bold;
+		}
+
+		.searchbtn {
+			background: #ffffff;
+			width: 10%
+			border-radius: 5px;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.searchbtn .fas {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 18px;
+		}
+	
+		.p1 {
+			font-family: "Lucida Handwriting, Brush Script MT, cursive";
+		}
+
+		li, a, button {
+			font-family: sans-serif
+			font-weight: 500;
+			font-size: 16px;
+			color: #ecf0f1;
+			text-decoration: none;
+		}
+
+		header {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 30px 10%;
+		}
+
+		.logo {
+			cursor: pointer;
+			margin-right: auto;
+		}
+
+		.nav_links {
+			list-style: none;
+		}
+
+		.nav_links li {
+			display: inline-block;
+			padding: 0px 20px;
+		}
+	
+		.nav_links li a {
+			transition: all 0.3s ease 0s;
+		}
+
+		.nav_links li a:hover {
+			color: #0088a9;
+		}
+
+		button {
+			margin-left: 20px;
+			padding: 9px 25px;
+			background-color: rgba(0, 136, 169, 1);
+			border: none;
+			border-radius: 50px;
+			cursor: pointer;
+			transition: all 0.3s ease 0s;
+		}
+
+		button:hover {
+			background-color: rgba(0, 136, 169, 0.8)
+		}
+
+		.bannerDiv {
+			padding: 370px;
+			background: url('../images/omenInternal.png') no-repeat;
+			background-size: cover;
+
+		}
+
+		.serviceDiv {
+			padding: 300px;
+		}
+
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		td {
+			text-align: center;
+		}
+
+		.horizontal-line {
+			border-top: 4px solid #fff;
+			display: block;
+			height: 100px;
+			margin: 0 auto;
+			width: 350px;
+		}
+
+		#corners {
+  			border-radius: 15px;
+  			background: grey;
+  			padding: 20px; 
+  			width: 250px;
+  			height: 300px; 
+		} 
+
+	</style>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Gaming Services</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body text="#ffffff">
+		<header>
+			<p class="p1"><a href="index.html"><b>The Four Tops</b></a></p>
+			<img class="logo" src="../images/CompanyLogoOutlined.png" alt="logo" width="50" height="50">
+			
+			<nav>
+				<ul class="nav_links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+				</ul>
+			</nav>
+		
+			<a class="cta" href="#"><button>Login/Signup</button></a>
+		</header>
+
+		<a href="services.html"><img src="../images/backButton.png" width="40" height="35" style="position: absolute; left: 50px; top: 100px;"></a>
+		<a href="services.html"><p style="position: absolute; left: 95px; top: 106px;"><b>Go Back</b></p></a>
+
+		<h1 align="center" style="color: orange;">HP Omen 15 Laptop</h1><br>
+
+		<div class="bannerDiv"></div><br>
+
+		<h3 align="center"><b>Common Issues</b></h3>
+		<span class="horizontal-line"></span>
+		<p id="corners" style="position: absolute; left: 100px; top: 1050px;"></p>
+		<p id="corners" style="position: absolute; left: 475px; top: 1050px;"></p>	
+		<p id="corners" style="position: absolute; left: 850px; top: 1050px;"></p>
+
+
+		<h3 style="position: absolute; left: 175px; top: 1065px;">Heat Issue</h3>
+	
+		<table border="0" style="position: absolute; left: 110px; top: 1095px;">
+			<tr>
+				<td width="220" height="220">Have you recently added a new ssd? <br><p>- Double check to make sure you removed the sticker.</p><br> <p>Have you cleaned the inside of your computer?</p> <p>- Open up the computer and clear out any dust.</p></td>
+			</tr>
+		</table>				
+
+		<h3 style="position: absolute; left: 540px; top: 1065px;">Power Issue</h3>
+
+		<table border="0" style="position: absolute; left: 485px; top:1095px;">
+			<tr>
+				<td width="220" height="220">Is there any gunk in the power connector slot? <br><p>- Make sure to remove any debris to ensure good connection.</p><br><p> Is the power cord connected to the brick?</p>- The cable tends to slip off when tugged on.<td>
+			</tr>
+		<table> 
+	
+		<h3 style="position: absolute; left: 915px; top: 1065px;">Speed Issue</h3>
+
+		<table border="0" style="position: absolute; left: 862px; top: 1095px;">
+			<tr>
+				<td width="220" height="220"><p>Is your laptop full on storage?</p><br><p>- Free up some storage, low storage causes certain applications to run slower.</p><br></td>
+			</tr>
+		</table>
+
+		<div class="serviceDiv"></div>
+		<p style="position: absolute; left: 100px; top: 1465px;">Still not fixed? Send us an email with a short description of the issue and we will return your message within 24 to 48 hours.</p>
+		<table border="1" style="position: absolute; left: 350px; top: 1500px;" >
+			<tr>
+				<td width="500" height="260">
+					<form>
+						<input type="name" id="name" name="name" value="Full name" style="width: 100%"><br><br>
+						<input type="email" id="email" name="email" value="Email Address" style="width: 100%"><br><br> 	
+						<input type="inquiry" id="inquiry" name="inquiry" value="Description Here..." style="width: 100%; height: 100px;">
+					</form>					
+				</td>
+			</tr>
+		</table>		
+	
+		<input type="submit" value="Submit" style="position: absolute; left: 575px; top: 1730px;">
+		<div class="serviceDiv"></div>
+	</body>
+</html>
